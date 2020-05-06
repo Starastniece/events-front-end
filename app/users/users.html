@@ -1,0 +1,36 @@
+<div ng-controller="UsersCtrl">
+    <div id="isa_error" class="isa_error" style="display: none">
+        <i class="fa fa-times-circle">
+            <span id="error_msg_text"></span>
+        </i>
+    </div>
+
+
+    <div align="center">
+        <table id="customers" ng-controller="UsersCtrl">
+
+            <tr>
+                <th>Num</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+<!--                <th>Phone</th>-->
+                <th>Username</th>
+                <th>Status</th>
+
+            </tr>
+
+            <tr id="ctr" ng-repeat="oneRec in arrRec track by $index">
+                <td>{{$index + 1}}</td>
+                <td>{{oneRec.name}}</td>
+
+                <td>{{oneRec.surname}}</td>
+                <td>{{oneRec.email}}</td>
+<!--                <td>{{oneRec.phone}}</td>-->
+                <td>{{oneRec.username}}</td>
+                <td>{{oneRec.status}}</td>
+
+            </tr>
+        </table>
+    </div>
+</div>

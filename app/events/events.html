@@ -1,0 +1,43 @@
+<div ng-controller="EventsCtrl">
+    <div id="isa_error" class="isa_error" style="display: none">
+        <i class="fa fa-times-circle">
+            <span id="error_msg_text"></span>
+        </i>
+    </div>
+
+
+    <div align="center">
+        <table id="customers" ng-controller="EventsCtrl">
+
+            <tr>
+                <th>Num</th>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Street</th>
+                <th>City</th>
+                <th>Price</th>
+                <th>Max visitors</th>
+                <th>Duration</th>
+                <th>Link</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+
+            <tr id="ctr" ng-repeat="oneRec in arrRec track by $index">
+                <td>{{$index + 1}}</td>
+                <td>{{oneRec.name}}</td>
+
+                <td>{{oneRec.date}}</td>
+                <td>{{oneRec.street}}</td>
+                <td>{{oneRec.city}}</td>
+                <td>{{oneRec.price}}</td>
+                <td>{{oneRec.maxVisitors}}</td>
+                <td>{{oneRec.duration}}</td>
+                <td>{{oneRec.link}}</td>
+                <td>{{oneRec.email}}</td>
+                <td>{{oneRec.phone}}</td>
+
+            </tr>
+        </table>
+    </div>
+</div>
