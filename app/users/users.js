@@ -12,7 +12,7 @@ angular.module('myApp.users', ['ngRoute'])
     .controller('UsersCtrl', ['$scope', '$http', function ($scope, $httpClient) {
         console.log('Users controller at work')
 
-        $httpClient.get("http://localhost:8083/api/v1/rest/Users/users").then(function (response) {
+        $httpClient.get("http://localhost:8083/api/v1/rest/User/users").then(function (response) {
             console.log(response);
 
 
