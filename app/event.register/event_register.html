@@ -1,0 +1,65 @@
+
+<link rel="stylesheet" href="event.register/css/event_register.css">
+
+
+<div class="container" ng-controller="EventRegisterCtrl">
+
+<!--    <div id="isa_error" class="isa_error" style="visibility:hidden">-->
+<!--        <i class="fa fa-times-circle">-->
+<!--            <span id="error_msg_text"></span>-->
+<!--        </i>-->
+<!--    </div>-->
+
+    <form id="contact" ng-controller="EventRegisterCtrl" ng-submit="submit()" method="post">
+        <h3>Event register</h3>
+        <fieldset>
+            <input id="title" ng-model="title"
+                   placeholder="Event title" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input id="date" ng-model="date"
+                   placeholder="Events date" type="text" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input id="street" ng-model="street"
+                   placeholder="Street" type="text" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+            <input id="city" ng-model="city"
+                   placeholder="City" type="text" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <input id="price" ng-model="price"
+                   placeholder="Price" type="text" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <input id="visitors" ng-model="visitors"
+                   placeholder="visitors" type="text" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <input id="duration" ng-model="duration"
+                   placeholder="duration" type="text" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <input id="link" ng-model="link"
+                   placeholder="link" type="text" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <input id="email" ng-model="email"
+                   placeholder="email" type="text" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+            <input id="phone" ng-model="phone"
+                   placeholder="phone" type="text" tabindex="4" required>
+        </fieldset>
+
+
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit"
+                    data-submit="...Sending">Submit</button>
+        </fieldset>
+    </form>
+
+</div>
+
+
